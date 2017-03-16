@@ -10,7 +10,7 @@
         <h2 class="text-center">Basic Membership</h2>
         <h4>Sign up for free and get basic access to the Unicorn marvelous community</h4>
         <br/>
-        <%= link_to "Sign Up with Basic Star", p, class: "btn btn-primary btn-lg btn-block" %>
+        <%= link_to "Sign Up with Basic Star", new_user_registration_path(plan: @basic_plan.name), class: "btn btn-primary btn-lg btn-block" %>
       </div>
     </div>
     <div class="col-md-6">
@@ -18,7 +18,7 @@
         <h2 class="text-center">Pro Membership</h2>
         <h4>Sign up with a Pro account to get even more candytent from our marvelous community and get our members contacts! WOW!</h4>
         <br/>
-        <%= link_to "Sign Up with a Pro Star", p, class: "btn btn-success btn-lg btn-block" %>
+        <%= link_to "Sign Up with a Pro Star", new_user_registration_path(plan: @pro_plan.name), class: "btn btn-success btn-lg btn-block" %>
       </div>
     </div>
   </div>  
