@@ -11,7 +11,7 @@ Stripe Integration
 
 * Users should have a Stripe customer token in the users table. +
 * Javascript should prevent pro form from submitting, when user fills it out,
-and should sen card info to Stripe. Stripe will return with a card toekn.
+and should sen card info to Stripe. Stripe will return with a card toekn. @users.js
 * Jacascript should send user fields and card token to our rails app for 
 validation. Rails app should validate the user fields. Rails app will note 
 whether plan 1 or plan 2 (basic or pro).
