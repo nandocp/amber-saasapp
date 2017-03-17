@@ -3,14 +3,14 @@
 //Document ready for recurring payments.
 $(document).on ('turbolinks:load', function(){
   var theForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
   
   //Set Stripe public key so that Stripe knows that who asks for a token is truly themselves.
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') )
   
   //When user clicks form submit btn.
   //prevent default submission behaviour.
-  SubmitBtn.click(function(event){
+  submitBtn.click(function(event){
     event.preventDefault();
     submitBtn.val("Processing").prop('disabled', true);
     
